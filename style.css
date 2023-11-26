@@ -114,7 +114,7 @@ nav > .right > button:hover{
 
 .leftHome > img{
     width: 100%;
-    height: 100%;
+    /* height: 100%; */
     object-fit: contain;
     /* border: 1px solid wheat; */
 }
@@ -459,18 +459,19 @@ color: white;
     }
 
     .leftHome{
-        height: 60%;
+        height: 50%;
     }
 
     .rightHome{
-        height: 40%;
-        justify-content: flex-start;
+        height: 50%;
+        justify-content: center;
 
     }
 
     .rightHome > h1{
         font-size: 4vmax;
         margin-bottom: 30px;
+        
 
     }
     .rightHome > p{
@@ -499,6 +500,7 @@ color: white;
     .container > .leftbox > h1 {
         font-size: 5vmax;
         margin-bottom: 30px;
+        text-align: center;
     }
 
     .container > .leftbox > p {
