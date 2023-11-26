@@ -5,14 +5,16 @@ const coupen = document.getElementsByClassName("coupen-cards")
 leftArrow.addEventListener("click",()=>{
     
     for(let i = 0; i < coupen.length; i++){
-        coupen[i].style.transform = "translateX(-100px)"
+        coupen[i].style.transform = "translateX(0px)"
+   
     }
 })
 
 rightArrow.addEventListener("click",()=>{
     
     for(let i = 0; i < coupen.length; i++){
-        coupen[i].style.transform = "translateX(0px)"
+        coupen[i].style.transform = "translateX(-180px)"
+        
     }
 })
 
