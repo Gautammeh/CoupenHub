@@ -1,0 +1,581 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Paytone+One&family=Poppins:wght@400;700&family=Roboto&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;   
+    /* border: 1px solid red; */
+}
+body{
+    font-family: 'Roboto', sans-serif;
+}
+nav{
+    width: 100%;
+    background-color: black;
+    display: flex;
+    height: 4vmax;
+    box-shadow: 0 0 10px white;
+    position: sticky;
+    top: 0%;
+}
+.left{
+   
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+
+    
+}
+
+.left > a{
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    color: rgb(255, 89, 122);
+    font-size: 2vmax;
+    font-weight: 600;
+   
+    
+    
+
+}
+.mid{
+  
+    width: 60%;
+    display: flex;
+    justify-content: space-evenly;
+   
+    
+}
+
+.mid > a{
+    text-decoration: none;
+    color: white;
+    
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+
+}
+
+nav > .mid > a:hover{
+    border-bottom: 3px solid crimson;
+}
+.right{
+   
+    width: 20%;
+    display: flex;
+    justify-content: space-around;
+    padding: 5px 0;
+}
+
+.right > button{
+    width: 35%;
+    font-size: 1.2vmax;
+    cursor: pointer;
+    transition: background-color 0.4s ease-in;
+    border-radius: 3px;
+    font-weight: 600;
+    border: none;
+    
+}
+
+nav > .right > button:hover{
+    background-color: crimson;
+    color: white;
+    font-weight: 600;
+    
+}
+
+
+/*----------------HOME---------------------*/
+#home{
+    height: 85vh;
+    background: linear-gradient(360deg,rgb(236, 68, 68), white);
+    display: flex;
+}
+
+.leftHome{
+    width: 100%;
+    
+    /* border: 1px solid black; */
+     
+     display: flex;
+     justify-content: center;
+     align-items: center;
+    
+}
+
+.leftHome > img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    /* border: 1px solid wheat; */
+}
+
+.rightHome{
+    width: 100%;
+
+     display: flex;
+     flex-direction: column;
+     padding: 3vmax;
+     justify-content: space-evenly;
+    
+}
+
+.rightHome > h1{
+    font-family: 'Poppins';
+    font-size: 3vmax;
+    text-align: center;
+    color: #ffffff;
+}
+
+.rightHome > p{
+    color: white;
+    font-size: 1.5vmax;
+    text-align: center;
+    
+}
+
+.rightHome > button{
+    width: 12vmax;
+    margin:  0 auto;
+    padding: 1vmax;
+    border: none;
+    cursor: pointer;
+    border-radius: 6px;
+    background-color: crimson;
+    color: white;
+    transition: background-color 0.4s ease-in;
+}
+
+.rightHome > button:hover{
+    background-color: crimson;
+    color: black;
+    background-color: white;
+    font-weight: 600;
+}
+
+.seperation{
+    height: 4px;
+    background-color: rgb(104 ,104, 104);
+}
+
+
+/*----------------WORKING---------------------*/
+#working{
+    /* border: 1px solid red; */
+    margin: 10px 0 0 0;
+    width: 100%;
+}
+
+#working > h1{
+    text-align: center;
+    font-size: 2.5vmax;
+}
+
+#working > .container{
+    display: flex;
+    background-color: rgb(253, 100, 100);
+    color: white;
+    width: 90vw;
+    margin: 10px auto;
+}
+
+.container > .box{
+    width: 100%;
+}
+
+
+.container > .box > img{
+    width: 100%;
+    height: 100%;
+}
+
+.container > .leftbox{
+    padding: 3vmax;
+    display: flex;
+    flex-direction: column;
+  
+}
+
+.container > .leftbox > h1{
+    font-size: 3vmax;
+    margin-bottom: 30px;
+}
+
+.container > .leftbox > p{
+    font-size: 1.5vmax;
+}
+
+/*----------------COUPENS---------------------*/
+#coupens{
+    margin: 10px 0 0 0;
+    width: 100%;
+    /* border: 1px solid blue; */
+}
+
+.outerdiv{
+    display: flex;
+    align-items: center;
+}
+.outerdiv > i{
+    font-size: 4vmax;
+}
+#coupens > h1{
+    text-align: center;
+    font-size: 2.5vmax;
+    /* border: 1px solid blue; */
+}
+.coupen-cards{
+    /* border: 1px solid black;  */
+    width: 150px;
+    height: 150px;
+    
+}
+
+.coupen-cards > img{
+    width: 100%;
+    height: 100%;
+}
+#coupens >.outerdiv> .cards{
+    width: 90vw;
+    /* border: 1px solid red; */
+    display: grid;
+    /* justify-content: space-between;
+     */
+     grid-template-columns: repeat(10 , 1fr);
+     gap: 10px;
+    align-items: center;
+    padding: 2vmax;
+    margin: 20px auto;
+    overflow: hidden;
+}
+
+
+
+/*----------------FOOTER---------------------*/
+#footer{
+    background-color: black;
+    height: 20vh;
+    color: white;
+    text-align: center;
+    padding: 5px 30px;
+}
+
+.footer-content{
+    display: flex;
+    margin-top: 20px;
+    justify-content: space-around;
+}
+
+.footer-links{
+    width: 30%;
+    display: flex;
+    justify-content: space-around;
+    /* border: 1px solid white; */
+}
+
+.footer-links > a{
+    color: white;
+    text-decoration: none;
+}
+
+
+.footer-links > a:hover{
+    color: crimson;
+}
+
+body > nav > #hamburger
+{
+display: none;
+color: white;
+}
+
+#dropdown{
+    display: none;
+    position: absolute;
+    flex-direction: column;
+    width: 100%;
+    top: 35px;
+    background-color: transparent;
+    backdrop-filter: blur(15px);
+    padding: 10px 0px;
+    transition: height 0.5s ease-in-out;
+  }
+
+  #dropdown > .first{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  
+  }
+  #dropdown > .first > a{
+    font-size: 20px;
+    text-decoration: none;
+    font-weight: 500;
+    color: black;
+    /* font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
+    margin-top: 5px;
+  }
+  #dropdown > .second{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    padding: 10px 30px;
+  }
+
+  #dropdown > .second > button{
+    width: 30%;
+   
+    padding: 1vmax;
+    border: none;
+    cursor: pointer;
+    border-radius: 6px;
+    background-color: crimson;
+    color: white;
+    transition: background-color 0.4s ease-in;
+  }
+
+  #dropdown > .first> a:hover{
+    border-bottom: 3px solid crimson;
+  
+    
+  }
+
+
+/*-----------------COUPEN PAGE CSS */
+
+#head{
+    text-align: center;
+    margin-top: 10px;
+}
+
+.upload-coupen{
+    /* border: 1px solid black; */
+    background-color:rgb(247 247 247);
+
+
+    border-radius: 8px;
+    width: 90vw;
+    margin: 20px auto;
+    /* height: 100vh; */
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    padding: 10px;
+    
+    
+}
+
+
+.upload-coupen > .all-coupen{
+    border: 1px solid black;
+    width: 25vw;
+    height: 23vw;
+    border-radius: 8px;
+}
+
+
+/*-----------------About PAGE CSS */
+#abt-head{
+    text-align: center;
+   margin: 10px auto;
+    border-bottom:2px solid black;
+    width: 10%;
+}
+
+.info{
+    width: 90vw;
+    text-align: justify;
+    background-color: rgba(230, 230, 230, 0.4);
+    border-radius: 8px;
+    margin: auto;
+    padding: 20px;
+    
+
+}
+
+.my-div{
+    display: flex;
+    
+    height: 45vh;
+    width: 90vw;
+    margin: 10px auto;
+}
+.my-div > .container{
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.my-div > .container > img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+
+
+
+
+@media screen and (max-width:500px){
+
+    nav{
+        height: 6vmax;
+        position: relative;
+    }
+
+    .left > a{
+        font-size: 3vmax;
+        width: 40%;
+    }
+    .mid , .right{
+        display: none;
+    }
+    body > nav > #hamburger{
+        display: block;
+        color: white;
+        font-size: 20px;
+        cursor: pointer;
+        position: absolute;
+        right: 20px;
+        top: 6px;
+      }
+
+    #home{
+        flex-wrap: wrap;
+    height: 123vh;
+    /* background-color: greenyellow; */
+    }
+
+    .leftHome{
+        height: 60%;
+    }
+
+    .rightHome{
+        height: 40%;
+        justify-content: flex-start;
+
+    }
+
+    .rightHome > h1{
+        font-size: 4vmax;
+        margin-bottom: 30px;
+
+    }
+    .rightHome > p{
+        font-size: 2.5vmax;
+        margin-bottom: 30px;
+
+    }
+    .rightHome > button{
+
+        width: 20vmax;
+        padding: 2vmax;
+
+    }
+
+
+    #working > .container{
+        flex-wrap: wrap;
+    height: 80vh;
+    display: flex;
+    background-color: rgb(253, 100, 100);
+    color: white;
+    width:80    vw;
+    margin: 10px auto;
+    }
+
+    .container > .leftbox > h1 {
+        font-size: 5vmax;
+        margin-bottom: 30px;
+    }
+
+    .container > .leftbox > p {
+            font-size: 2.5vmax;
+    }
+
+    #working > h1 {
+                text-align: center;
+                font-size: 3.5vmax;
+    }
+
+    .container > .leftbox {
+        height: 50%;
+    }
+    .container > .box{
+        height: 50%;
+    }
+    #footer {
+        background-color: black;
+        height: 40vh;
+        color: white;
+        text-align: center;
+        padding: 5px 30px;
+    }
+
+    .footer-content {
+        
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+       
+    }
+
+    .footer-links {
+        width: 50%;
+        display: flex;
+        justify-content: space-between;
+    }
+    .footer-links {
+        width: 70%;
+    }
+
+    /*-----------------About PAGE CSS */
+    body > #abt-head{
+        /* text-align: center; */
+       margin: 10px auto;
+        border-bottom:2px solid black;
+        width: 35%;
+       
+    }
+
+    body > .my-div{
+        display: flex;
+        flex-direction: column-reverse;
+        height: 80vh;
+        width: 85vw;
+        margin: 40px auto;
+        text-align: justify;
+        /* font-size: 0px; */
+    }
+
+
+    /*-----------------COUPEN PAGE CSS */
+
+    #head{
+        font-size: 4vmax;
+    }
+
+    body > .upload-coupen{
+        grid-template-columns: repeat(3,1fr);
+        gap: 10px 0;
+        justify-content: center;
+
+    }
+    body > .upload-coupen > .all-coupen{
+        margin: auto;
+    }
+    
+    
+}

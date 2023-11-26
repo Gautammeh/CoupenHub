@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    <script src="./script.js" defer></script>
+</head>
+<body>
+    <nav>
+        <div class="left">
+            <a href="#">CoupenHub.</a>
+        </div>
+        <div class="mid">
+            <a href="./index.html">Home</a>
+            <a href="./coupen.html">Coupens</a>
+            <a href="#">How it works!</a>
+            <a href="./about.html">About Us</a>
+        </div>
+        <div class="right">
+           
+            <button>Log in</button>
+            <button>Sign Up</button>
+        </div>
+        <i class="ri-menu-line" id="hamburger"></i>
+        <div id="dropdown">
+            <div class="first">
+                <a href="./index.html">Home</a>
+                <a href="./coupen.html">Coupens</a>
+                <a href="#">How it works!</a>
+                <a href="./about.html">About Us</a>
+            </div>
+            <div class="second">
+                <button>Log in</button>
+                <button>Sign Up</button>
+            
+            </div>
+    </nav>
+    
+    <h1 id="head">Welcome to the Coupen Section</h1>
+
+    <div class="upload-coupen">
+
+        <div class="all-coupen"></div>
+        <div class="all-coupen"></div>
+        <div class="all-coupen"></div>
+        <div class="all-coupen"></div>
+        <div class="all-coupen"></div>
+        <div class="all-coupen"></div>
+        <div class="all-coupen"></div>
+        <div class="all-coupen"></div>
+        <div class="all-coupen"></div>
+        <div class="all-coupen"></div>
+        <div class="all-coupen"></div>
+        <div class="all-coupen"></div>
+        <div class="all-coupen"></div>
+        <div class="all-coupen"></div>
+        <div class="all-coupen"></div>
+        <div class="all-coupen"></div>
+        <div class="all-coupen"></div>
+        <div class="all-coupen"></div>
+        <div class="all-coupen"></div>
+        <div class="all-coupen"></div>
+        <div class="all-coupen"></div>
+        <div class="all-coupen"></div>
+        <div class="all-coupen"></div>
+        <div class="all-coupen"></div>
+       
+        
+        
+            
+       
+        
+
+    </div>
+</body>
+<script>
+        const hamburger = document.getElementById("hamburger");
+    const dropdown = document.getElementById("dropdown");
+
+
+
+    let val = 0
+    hamburger.addEventListener("click",()=>{
+
+        if(val== 0){
+
+            
+        
+        dropdown.style.display = "block";
+        hamburger.removeAttribute;
+        hamburger.setAttribute("class","ri-close-fill");
+        val = 1;
+
+
+        }
+        else{
+        dropdown.style.display = "none";
+        hamburger.removeAttribute;
+        hamburger.setAttribute("class","ri-menu-line");
+        val = 0;
+
+        }
+        
+
+
+
+    })
+</script>
+</html>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    <script src="./script.js" defer></script>
+</head>
+<body>
+    <nav>
+        <div class="left">
+            <a href="#">CoupenHub.</a>
+        </div>
+        <div class="mid">
+            <a href="./index.html">Home</a>
+            <a href="./coupen.html">Coupens</a>
+            <a href="#">How it works!</a>
+            <a href="./about.html">About Us</a>
+        </div>
+        <div class="right">
+           
+            <button>Log in</button>
+            <button>Sign Up</button>
+        </div>
+        <i class="ri-menu-line" id="hamburger"></i>
+        <div id="dropdown">
+            <div class="first">
+                <a href="./index.html">Home</a>
+                <a href="./coupen.html">Coupens</a>
+                <a href="#">How it works!</a>
+                <a href="./about.html">About Us</a>
+            </div>
+            <div class="second">
+                <button>Log in</button>
+                <button>Sign Up</button>
+            
+            </div>
+    </nav>
+
+ 
+
+    <h2 id="abt-head">About Us</h2>
+
+    <div class="info">
+        <p>"CoupenHub is a premier destination for exclusive discounts, vouchers, and offers from your favorite brands. Our platform operates on a unique sharing model, where users contribute unused coupons they don't need, allowing others to benefit. We connect these coupons with individuals seeking precisely those discounts, ensuring that every coupon finds its way to someone who can make the most of it. Our mission is to match unused coupons with those who have a genuine requirement, fostering a community of savings and convenience for all."</p>
+    </div>
+
+    <div class="my-div">
+        <div class="container">
+            <p>At CoupenHub., our mission is simple yet impactful: to rescue unused coupons and provide them to those who can benefit the most. For years, we've dedicated ourselves to sharing these savings, believing that everyone deserves access to financial relief. Every coupon we offer represents an opportunity to brighten someone's day, alleviate financial burdens, and create smiles. Join us in our journey of giving back and spreading kindness—one unused coupon at a time.</p>
+        </div>
+        <div class="container">
+            <img src="https://img.freepik.com/premium-photo/3d-purple-coupon-with-percentage-sign-flying-gifts-online-sales-favorable-prices_499459-346.jpg?size=626&ext=jpg&ga=GA1.1.386372595.1698364800&semt=ais" alt="">
+        </div>
+    </div>
+
+    <section id="footer">
+        <h1>"Unlock Unlimited Savings at CoupenHub!</h1>
+        <div class="footer-content">
+            <p>Copyright 2023: CoupenHub.! All Rights Reserved. Designed by Gautam Mehta</p>
+
+            <div class="footer-links">
+            <a href="">Home</a>|
+            <a href="">Coupen</a>|
+            <a href="">About</a>
+        </div>
+
+
+
+        </div>
+    </section>
+</body>
+<script>
+    const hamburger = document.getElementById("hamburger");
+const dropdown = document.getElementById("dropdown");
+
+
+
+let val = 0
+hamburger.addEventListener("click",()=>{
+
+    if(val== 0){
+
+        
+    
+    dropdown.style.display = "block";
+    hamburger.removeAttribute;
+    hamburger.setAttribute("class","ri-close-fill");
+    val = 1;
+
+
+    }
+    else{
+    dropdown.style.display = "none";
+    hamburger.removeAttribute;
+    hamburger.setAttribute("class","ri-menu-line");
+    val = 0;
+
+    }
+    
+
+
+
+})
+</script>
+</html>
